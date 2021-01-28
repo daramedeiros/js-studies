@@ -5,7 +5,7 @@ Nesse exercício, você está livre para escolher os nomes para suas variáveis 
 ```js
 // Crie uma função que receba dois argumentos e retorne a soma dos mesmos.
 function somando ( x , y ) {
-... return x + y 
+... return x + y
 ... }
 
 // Declare uma variável que receba a invocação da função criada acima, passando dois números quaisquer por argumento, e somando `5` ao resultado retornado da função.
@@ -42,7 +42,7 @@ Crie uma função com as seguintes características:
 3. O retorno da função deve ser a multiplicação dos 3 argumentos, somando `2` ao resultado da multiplicação.
 */
 function newFunction (a, b, c) {
-    if ( a === undefined || b === undefined || c === undefined ){
+    if ( a === undefined ?? b === undefined ?? c === undefined ){
         return 'Preenchaa todos os valores corretamente!';
     }
     return (a * b * c) + 2;
@@ -50,7 +50,7 @@ function newFunction (a, b, c) {
 }
 
 // Invoque a função criada acima, passando só dois números como argumento.
-newFuction(2,2);
+newFunction(2,2);
 
 // Qual o resultado da invocação acima? (Use comentários para mostrar o valor retornado).
 // > Preenchaa todos os valores corretamente!
@@ -72,14 +72,14 @@ Crie uma função com as seguintes características:
 */
 
 function threeArgs ( a, b, c ) {
-    if ( a !== undefined && b === undefined && c === undefined) {
+    if ( a ?? b === undefined ?? c === undefined) {
         return a;
     }
-    else if (  a !== undefined && b !== undefined && c === undefined ) {
+    else if (  a ?? undefined ?? b !== undefined ?? c === undefined ) {
         return a + b;
-    } else if ( a !== undefined && b !== undefined && c !== undefined ) {
+    } else if ( a !== undefined ?? b !== undefined ?? c !== undefined ) {
         return (a + b) / c;
-    } else if ( a === undefined && b === undefined && c === undefined ) {
+    } else if ( a === undefined ?? b === undefined ?? c === undefined ) {
         return false;
     } else {
         return null;
