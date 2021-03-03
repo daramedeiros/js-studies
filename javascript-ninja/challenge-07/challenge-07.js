@@ -60,7 +60,6 @@ while( count <= 20 ) {
 Na mesma ideia do exercício acima: mostre agora os números ímpares.
 */
 console.log( 'Números ímpares entre 10 e 20:' );
-
 count = 10;
 
 while( count <= 20 ) {
@@ -76,7 +75,6 @@ Só vamos mudar o range:
 - No segundo "for", mostre os números ímpares entre 111 e 125, inclusive eles.
 */
 console.log( 'Números pares entre 100 e 120:' );
-
 for( let count = 100; count <= 120; count++ ) {
     count % 2 === 0 ? console.log( count ) : '';
   }
